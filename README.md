@@ -6,6 +6,21 @@ Repo for the ICON Blockchain tracker containing docker scripts to setup the stac
 
 [Status Page](https://tracker.status.icon.community)
 
+# Paul Rouge trial
+## .env
+Make sure the .env file is correct. Should contain only this line:
+
+`HOST_URL="icon.sudoblock.dev"`
+
+## docker compose frontend
+Use this docker-compose file.
+
+`
+docker-compose -f docker-compose.frontend.yml up -d 
+docker-compose -f docker-compose.frontend.yml ps
+docker-compose -f docker-compose.frontend.yml down
+`
+
 #### Sub Repos
 
 To clone all the repos, run `make pull-repos` or install [tackle-box](https://github.com/robcxyz/tackle-box) and run `tackle repos.yaml`. This is not required to setup a local tracker. 
